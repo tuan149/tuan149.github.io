@@ -153,15 +153,15 @@ http://www.templatemo.com/tm-501-neaty
 
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <form action="#contact" method="post" class="contact-form">
+                                        <form action="#contact" method="post" class="contact-form" name="submit-to-google-sheet">
                                             <div class="form-group">
-                                                <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Tên"  required/>
+                                                <input type="text" id="contact_name" name="HoTen" class="form-control" placeholder="Tên"  required/>
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                                <input type="email" id="contact_email" name="Email" class="form-control" placeholder="Email"  required/>
                                             </div>
                                             <div class="form-group">
-                                                <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Tin nhắn" required></textarea>
+                                                <textarea id="contact_message" name="Message" class="form-control" rows="9" placeholder="Tin nhắn" required></textarea>
                                             </div>                                            
                                             <button type="submit" class="float-right tm-button">Gửi</button>
                                         </form>    
@@ -196,6 +196,7 @@ http://www.templatemo.com/tm-501-neaty
         <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
         <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
         <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="js/form-script.js"></script
         <script>     
        
             $(document).ready(function(){
