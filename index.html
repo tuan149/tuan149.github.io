@@ -1,236 +1,187 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>TMT-Blog</title>
-<!--
-Neaty HTML Template
-http://www.templatemo.com/tm-501-neaty
--->
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
-    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body>        
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-color navbar-dark" style="padding:0px 20px">
         <div class="container">
-            <div class="row">
-                <div class="tm-left-right-container">
-                    <!-- Left column: logo and menu -->
-                    <div class="tm-blue-bg tm-left-column">                        
-                        <div class="tm-logo-div text-xs-center">
-                            <img src="img/tm-neaty-logo.png" alt="Logo">
-                            <h1 class="tm-site-name">Minh Tuấn Blog</h1>
+            <nav class="navbar navbar-light" id="head-logo" style="padding:0px 16px">
+                <a class="navbar-brand" href="#" style="padding:0px">
+                    <img src="/image/logo.png" height="60" class="d-inline-block align-top" alt="">
+                </a>
+            </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div style="align-items: center;" class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fixcolor" href="#">Chào tổ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Danh mục
+                        </a>
+                        <div class="dropdown-menu bg-color" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Bóng gút</a>
+                            <a class="dropdown-item" href="#">Bóng râu</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Bóng cục súc</a>
                         </div>
-                        <nav class="tm-main-nav">
-                            <ul class="tm-main-nav-ul">
-                                <li class="tm-nav-item">
-                                    <a href="#welcome" class="tm-nav-item-link">Xin chào</a>
-                                </li>
-                                <li class="tm-nav-item">
-                                    <a href="#about" class="tm-nav-item-link">Thông tin</a>
-                                </li>
-                                <li class="tm-nav-item">
-                                    <a href="#galleryone" class="tm-nav-item-link">Thư viện thứ nhất</a>
-                                </li>
-                                <li class="tm-nav-item">
-                                    <a href="#secondgallery" class="tm-nav-item-link">Thư viện thứ hai</a>
-                                </li>
-                                <li class="tm-nav-item">
-                                    <a href="#thirdgallery" class="tm-nav-item-link">Thư viện thứ ba</a>
-                                </li>
-                                <li class="tm-nav-item">
-                                    <a href="#contact" class="tm-nav-item-link">Liên hệ</a>
-                                </li>
-                            </ul>
-                        </nav>                                         
-                    </div> <!-- Left column: logo and menu -->
-                    
-                    <!-- Right column: content -->
-                    <div class="tm-right-column">
-                        <figure>
-                            <img src="img/tuan01.jpg" alt="Header image" class="img-fluid">    
-                        </figure>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hướng dẫn</a>
+                    </li>
+                </ul>
 
-                        <div class="tm-content-div">
-                            <!-- Welcome section -->
-                            <section id="welcome" class="tm-section">
-                                <header>
-                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">Chào mừng tới blog của mình</h2>
-                                </header>
-                                <p>Nơi chia sẻ các công thức làm món ăn ngon</p>
-                            </section>
-                            <!-- About section -->
-                            <section id="about" class="tm-section">
-                                <div class="row">                                                                
-                                    <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 push-lg-4 push-md-5">
-                                        <header>
-                                            <h2 class="tm-blue-text tm-section-title tm-margin-b-45">Thạch phô mai</h2>
-                                        </header>
-                                        <p><b>Nguyên liệu:</b><br/>- 2,5 cục phô mai con bò<br/>- 100ML sữa tươi không đường<br/>- 100ML whipping<br/>- 45g đường<br/>- 2 lá gelatin</p>
-                                        <p><b>Dụng cụ:</b><br/>- Ray<br/>- Hai tô lớn</p>
-                                        <p><b>Cách làm:</b><br/>- Phô mai tán nhuyễn với sữa tươi rồi lọc qua ray 3-4 lần</p>
-                                        <a href="2.html" class="tm-button tm-button-wide">Đọc thêm</a>  
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12 pull-lg-8 pull-md-7 tm-about-img-container">
-                                        <img src="img/thachpm.jpg" alt="Image" class="img-fluid">    
-                                    </div>  
-                                </div>                            
-                            </section>  
-
-                            <!-- Gallery One section -->     
-                            <section id="galleryone" class="tm-section">
-                                <header><h2 class="tm-blue-text tm-section-title tm-margin-b-30">Thư viện thứ nhất</h2></header>
-                                <div class="tm-gallery-container tm-gallery-1">
-                                    <div class="tm-img-container tm-img-container-1">
-                                        <a href="img/neaty-03.jpg"><img src="img/neaty-03.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-1">
-                                        <a href="img/neaty-04.jpg"><img src="img/neaty-04.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-1">
-                                        <a href="img/neaty-05.jpg"><img src="img/neaty-05.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-1">
-                                        <a href="img/neaty-06.jpg"><img src="img/neaty-06.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-1">
-                                        <a href="img/neaty-07.jpg"><img src="img/neaty-07.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>                                    
-                                </div>
-                            </section>
-
-                            <!-- Second Gallery section -->     
-                            <section id="secondgallery" class="tm-section">
-                                <header><h2 class="tm-blue-text tm-section-title tm-margin-b-30">Thư viện thứ hai</h2></header>
-                                <div class="tm-gallery-container tm-gallery-2">
-                                    <div class="tm-img-container tm-img-container-2">
-                                        <a href="img/neaty-08.jpg"><img src="img/neaty-08.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-2">
-                                        <a href="img/neaty-09.jpg"><img src="img/neaty-09.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-2">
-                                        <a href="img/neaty-10.jpg"><img src="img/neaty-10.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>                                    
-                                </div>
-                            </section>
-
-                            <!-- Third Gallery section -->     
-                            <section id="thirdgallery" class="tm-section">
-                                <header><h2 class="tm-blue-text tm-section-title tm-margin-b-30">Thư viện thứ ba</h2></header>
-                                <div class="tm-gallery-container tm-gallery-3">
-                                    <div class="tm-img-container tm-img-container-3">
-                                        <a href="img/neaty-11.jpg"><img src="img/neaty-11.jpg" alt="Image" class="img-fluid tm-img-tn"></a>    
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-3">
-                                        <a href="img/neaty-12.jpg"><img src="img/neaty-12.jpg" alt="Image" class="img-fluid tm-img-tn"></a>
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-3">
-                                        <a href="img/neaty-13.jpg"><img src="img/neaty-13.jpg" alt="Image" class="img-fluid tm-img-tn"></a>
-                                    </div>
-                                    <div class="tm-img-container tm-img-container-3">
-                                        <a href="img/neaty-14.jpg"><img src="img/neaty-14.jpg" alt="Image" class="img-fluid tm-img-tn"></a>
-                                    </div>                                    
-                                </div>
-                            </section>
-
-                            <!-- Contact Us section -->
-                            <section id="contact" class="tm-section">
-                                <header><h2 class="tm-blue-text tm-section-title tm-margin-b-30">Liên hệ</h2></header>
-
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <form action="#contact" method="post" class="contact-form" name="submit-to-google-sheet">
-                                            <div class="form-group">
-                                                <input type="text" id="contact_name" name="HoTen" class="form-control" placeholder="Tên"  required/>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" id="contact_email" name="Email" class="form-control" placeholder="Email"  required/>
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea id="contact_message" name="Message" class="form-control" rows="9" placeholder="Tin nhắn" required></textarea>
-                                            </div>                                            
-                                            <button type="submit" class="float-right tm-button">Gửi</button>
-                                        </form>    
-                                    </div>
-                                    
-                                    <div class="col-lg-6 tm-contact-right">
-                                        <p>
-                                        Trần Minh Tuấn  
-                                        </p>
-                                        <address>
-                                            FB: Minh Tuấn Trần<br>
-                                            Email: tuan1491998@gmail.com<br>
-                                            Phone: 0788773852
-                                        </address>
-                                    </div>
-                                </div>
-                                
-                            </section>
-                            <footer>
-                                <p class="tm-copyright-p">Copyright &copy; <span class="tm-current-year">2019</span> TMT
-                                
-                                | Designed by <a href="https://www.facebook.com/minhtuan.tran.545849" target="_parent">MinhTuan</a></p>
-                            </footer>
-                        </div>  
-                        
-                    </div> <!-- Right column: content -->
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"
+                                onclick="document.getElementById('idLogin').style.display='block'"
+                                style="width:auto;">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Xin chào: @name
+                            </a>
+                            <div class="dropdown-menu bg-color" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Bóng gút</a>
+                                <a class="dropdown-item" href="#">Bóng râu</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Bóng cục súc</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-                
-        <!-- load JS files -->
-        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
-        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-        <script src="js/form-script.js"></script
-        <script>     
-       
-            $(document).ready(function(){
+            </div>
+        </div>
+    </nav>
 
-                // Single page nav
-                $('.tm-main-nav').singlePageNav({
-                    'currentClass' : "active",
-                    offset : 20
-                });
+    <!-- Login -->
+    <div id="idLogin" class="modal">
+        
+        <div class="modal-content">
+            <div class=row-center style="position: relative; left: -100px;">
+                <style>
+                    .pyro>.before,.pyro>.after{position:absolute;width:7px;height:7px;border-radius:50%;box-shadow:-120px -218.66667px blue,248px -16.66667px #00ff84,190px 16.33333px #002bff,-113px -308.66667px #ff009d,-109px -287.66667px #ffb300,-50px -313.66667px #ff006e,226px -31.66667px #ff4000,180px -351.66667px #ff00d0,-12px -338.66667px #00f6ff,220px -388.66667px #9f0,-69px -27.66667px #ff0400,-111px -339.66667px #6200ff,155px -237.66667px #0df,-152px -380.66667px #00ffd0,-50px -37.66667px #0fd,-95px -175.66667px #a6ff00,-88px 10.33333px #0d00ff,112px -309.66667px #005eff,69px -415.66667px #ff00a6,168px -100.66667px #ff004c,-244px 24.33333px #f60,97px -325.66667px #f06,-211px -182.66667px #00ffa2,236px -126.66667px #b700ff,140px -196.66667px #9000ff,125px -175.66667px #0bf,118px -381.66667px #ff002f,144px -111.66667px #ffae00,36px -78.66667px #f600ff,-63px -196.66667px #c800ff,-218px -227.66667px #d4ff00,-134px -377.66667px #ea00ff,-36px -412.66667px #ff00d4,209px -106.66667px #00fff2,91px -278.66667px #000dff,-22px -191.66667px #9dff00,139px -392.66667px #a6ff00,56px -2.66667px #09f,-156px -276.66667px #ea00ff,-163px -233.66667px #00fffb,-238px -346.66667px #00ff73,62px -363.66667px #08f,244px -170.66667px #0062ff,224px -142.66667px #b300ff,141px -208.66667px #9000ff,211px -285.66667px #f60,181px -128.66667px #1e00ff,90px -123.66667px #c800ff,189px 70.33333px #00ffc8,-18px -383.66667px #0f3,100px -6.66667px #ff008c;-moz-animation:1s bang ease-out infinite backwards,1s gravity ease-in infinite backwards,5s position linear infinite backwards;-webkit-animation:1s bang ease-out infinite backwards,1s gravity ease-in infinite backwards,5s position linear infinite backwards;-o-animation:1s bang ease-out infinite backwards,1s gravity ease-in infinite backwards,5s position linear infinite backwards;-ms-animation:1s bang ease-out infinite backwards,1s gravity ease-in infinite backwards,5s position linear infinite backwards;animation:1s bang ease-out infinite backwards,1s gravity ease-in infinite backwards,5s position linear infinite backwards}.pyro>.after{-moz-animation-delay:1.25s,1.25s,1.25s;-webkit-animation-delay:1.25s,1.25s,1.25s;-o-animation-delay:1.25s,1.25s,1.25s;-ms-animation-delay:1.25s,1.25s,1.25s;animation-delay:1.25s,1.25s,1.25s;-moz-animation-duration:1.25s,1.25s,6.25s;-webkit-animation-duration:1.25s,1.25s,6.25s;-o-animation-duration:1.25s,1.25s,6.25s;-ms-animation-duration:1.25s,1.25s,6.25s;animation-duration:1.25s,1.25s,6.25s}@-webkit-keyframes bang{from{box-shadow:0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white}}@-moz-keyframes bang{from{box-shadow:0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white}}@-o-keyframes bang{from{box-shadow:0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white}}@-ms-keyframes bang{from{box-shadow:0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white}}@keyframes bang{from{box-shadow:0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white,0 0 white}}@-webkit-keyframes gravity{to{transform:translateY(200px);-moz-transform:translateY(200px);-webkit-transform:translateY(200px);-o-transform:translateY(200px);-ms-transform:translateY(200px);opacity:0}}@-moz-keyframes gravity{to{transform:translateY(200px);-moz-transform:translateY(200px);-webkit-transform:translateY(200px);-o-transform:translateY(200px);-ms-transform:translateY(200px);opacity:0}}@-o-keyframes gravity{to{transform:translateY(200px);-moz-transform:translateY(200px);-webkit-transform:translateY(200px);-o-transform:translateY(200px);-ms-transform:translateY(200px);opacity:0}}@-ms-keyframes gravity{to{transform:translateY(200px);-moz-transform:translateY(200px);-webkit-transform:translateY(200px);-o-transform:translateY(200px);-ms-transform:translateY(200px);opacity:0}}@keyframes gravity{to{transform:translateY(200px);-moz-transform:translateY(200px);-webkit-transform:translateY(200px);-o-transform:translateY(200px);-ms-transform:translateY(200px);opacity:0}}@-webkit-keyframes position{0%,19.9%{margin-top:10%;margin-left:40%}20%,39.9%{margin-top:40%;margin-left:30%}40%,59.9%{margin-top:20%;margin-left:70%}60%,79.9%{margin-top:30%;margin-left:20%}80%,99.9%{margin-top:30%;margin-left:80%}}@-moz-keyframes position{0%,19.9%{margin-top:10%;margin-left:40%}20%,39.9%{margin-top:40%;margin-left:30%}40%,59.9%{margin-top:20%;margin-left:70%}60%,79.9%{margin-top:30%;margin-left:20%}80%,99.9%{margin-top:30%;margin-left:80%}}@-o-keyframes position{0%,19.9%{margin-top:10%;margin-left:40%}20%,39.9%{margin-top:40%;margin-left:30%}40%,59.9%{margin-top:20%;margin-left:70%}60%,79.9%{margin-top:30%;margin-left:20%}80%,99.9%{margin-top:30%;margin-left:80%}}@-ms-keyframes position{0%,19.9%{margin-top:10%;margin-left:40%}20%,39.9%{margin-top:40%;margin-left:30%}40%,59.9%{margin-top:20%;margin-left:70%}60%,79.9%{margin-top:30%;margin-left:20%}80%,99.9%{margin-top:30%;margin-left:80%}}@keyframes position{0%,19.9%{margin-top:10%;margin-left:40%}20%,39.9%{margin-top:40%;margin-left:30%}40%,59.9%{margin-top:20%;margin-left:70%}60%,79.9%{margin-top:30%;margin-left:20%}80%,99.9%{margin-top:30%;margin-left:80%}}
+                </style>
+                <div class=pyro>
+                    <div class=before></div>
+                    <div class=after></div>
+                </div>
+            </div>
+            <div style="margin:0 auto;" class="btn-group-login">
+                <button class="tablink login-color" onclick="openLogin(event,'DangNhap')">Đăng nhập</button>
+                <button class="tablink" onclick="openLogin(event,'DangKy')">Đăng ký</button>
+            </div>
+            <div id="DangNhap" class="login">
+                <form class="animate" action="/action_page.php" method="post">
+                    <div>
+                        <span onclick="document.getElementById('idLogin').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                    </div>
 
-                // Magnific pop up
-                $('.tm-gallery-1').magnificPopup({
-                  delegate: 'a', // child items selector, by clicking on it popup will open
-                  type: 'image',
-                  gallery: {enabled:true}
-                  // other options
-                }); 
+                    <div style="text-align: center; margin-top: 5px;">
+                        <h3 style="margin:0px;">Đăng nhập</h3>
+                    </div>
+                    <div class="form-login">
+                        <label for="uname"><b>Tên đăng nhập</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <label for="psw"><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="btn btn-login-info">Đăng nhập</button>
+                        <a id="forgot-pass" href="#">Quên mật khẩu ?</a>
+                    </div>
+                </form>
+            </div>
+            <div id="DangKy" class="login" style="display:none">
+                <form class="animate" action="/action_page.php" method="post">
+                    <div>
+                        <span onclick="document.getElementById('idLogin').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                    </div>
 
-                $('.tm-gallery-2').magnificPopup({
-                  delegate: 'a', // child items selector, by clicking on it popup will open
-                  type: 'image',
-                  gallery: {enabled:true}
-                  // other options
-                }); 
+                    <div style="text-align: center; margin-top: 5px;">
+                        <h3>Đăng ký</h3>
+                    </div>
+                    <div class="form-login">
 
-                $('.tm-gallery-3').magnificPopup({
-                  delegate: 'a', // child items selector, by clicking on it popup will open
-                  type: 'image',
-                  gallery: {enabled:true}
-                  // other options
-                }); 
+                        <label><b>Tên đăng nhập</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
 
-                $('.tm-current-year').text(new Date().getFullYear());                
-            });
-        </script>             
+                        <label><b>Mật khẩu</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label><b>Email</b></label>
+                        <input type="email" placeholder="Enter Email" name="uname" required>
+
+                        <label><b>Họ tên</b></label>
+                        <input type="text" placeholder="Enter Name" name="uname" required>
+
+                        <button type="submit" class="btn btn-login-info">Đăng ký</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End Login -->
+
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('idLogin');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        //Chuyển tab login
+        function openLogin(evt, loginName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("login");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" login-color", "");
+            }
+            document.getElementById(loginName).style.display = "block";
+            evt.currentTarget.className += " login-color";
+        }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
