@@ -144,6 +144,13 @@ input {
     .cancelbtn {
        width: 100%;
     }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 50%; /* Could be more or less, depending on screen size */
+      border-radius: 10px;
+  }
   }
 
   .form-login{
@@ -184,12 +191,4 @@ input {
   }
   /*----------End Login -------------*/
 
-  @media only screen and (max-width: 768px) {
-    .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-        border-radius: 10px;
-    }
-  }
+ 
